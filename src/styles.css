@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --color-primary: #002BFF;
+  --color-secondary: #FFFF00;
+  --color-tertiary: #FF0004;
+  --color-text: #FFFFFF;
+}
+
+.dark{
+  --color-primary: #000000;
+  --color-secondary: #9C0101;
+  --color-tertiary: #000000;
+  --color-text: #E2E2E2;
+}
+
+.project-text:hover{
+  color: #002BFF;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+  transform: translate(-2rem, -.5rem);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.hover-effect:hover {
+}
