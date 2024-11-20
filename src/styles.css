@@ -16,6 +16,16 @@
   --color-text: #E2E2E2;
 }
 
+.inter{
+  font-family: Inter, "Helvetica Neue", "Helvetica";
+
+}
+
+.mono{
+  font-family: "Fira Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
 
 
 .project-text:hover{
