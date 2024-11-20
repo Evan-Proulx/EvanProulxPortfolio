@@ -1,0 +1,28 @@
+.card {
+  width: 35rem;
+  height: 45rem;
+  background-color: #282c34;
+  background: #C9CCD3;
+  background-image: linear-gradient(-180deg, rgba(110, 110, 110, 0.5) 0%, rgba(31, 31, 31, 0.5) 100%);
+  background-blend-mode: lighten;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.card img {
+  width: 99%;
+  height: 99%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.card h3 {
+  margin: 10px 0;
+}
+.card p {
+  margin: 0;
+}

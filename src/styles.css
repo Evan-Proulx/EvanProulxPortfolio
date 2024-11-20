@@ -16,6 +16,8 @@
   --color-text: #E2E2E2;
 }
 
+
+
 .project-text:hover{
   color: #002BFF;
   -webkit-text-stroke-width: 2px;
