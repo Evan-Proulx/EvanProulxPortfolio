@@ -7,6 +7,8 @@
   --color-secondary: #FFFF00;
   --color-tertiary: #FF0004;
   --color-text: #FFFFFF;
+  --color-primary-opacity: rgba(0, 43, 255, 0.94);
+
 }
 
 .dark{
@@ -29,7 +31,7 @@
 
 
 .project-text:hover{
-  color: #002BFF;
+  color: var(--color-primary);
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: white;
   transform: translate(-2rem, -.5rem);

@@ -13,8 +13,10 @@ import {NgOptimizedImage} from "@angular/common";
 })
 export class TestComponent implements AfterViewInit {
   @Output() close = new EventEmitter<void>();
+  scale = 1.05;
 
   clickedOutside = false;
+
   ngAfterViewInit() {
     // Initialize Card3d on the desired element
     const cardElement = document.querySelector('.card');
@@ -24,12 +26,18 @@ export class TestComponent implements AfterViewInit {
         perspective: 300,
         glareOpacity: 0.5,
         axis: 'all',
-        scale: 1.05,
+        scale: this.scale,
         fullPageListening: true,
       });
       }
   }
+  openPdf() {
+    const pdfUrl = 'assets/EvanProulxResume.pdf';
+    window.open(pdfUrl, '_blank');
+  }
   closeModal(){
     this.close.emit();
   }
+
+  protected readonly open = open;
 }
